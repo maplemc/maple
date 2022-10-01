@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "maple",
+  "version": "${version}",
+
+  "name": "Maple",
+  "description": "Maple is a pathfinding system designed to navigate the vast landscapes of Minecraft without any user intervention.",
+  "authors": [
+    "Marmo"
+  ],
+  "contact": {
+    "homepage": "https://maplemc.github.io/",
+    "sources": "https://github.com/maplemc/maple",
+    "issues": "https://github.com/maplemc/maple/issues"
+  },
+
+  "license": "GPL-3.0",
+  "icon": "assets/maple/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.maple.Maple"
+    ]
+  },
+  "mixins": [
+    "maple.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}
